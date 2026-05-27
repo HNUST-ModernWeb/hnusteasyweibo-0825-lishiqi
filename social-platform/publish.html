@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布动态 - 社交分享平台</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav-container">
+        <a href="index.html" class="logo">社交分享平台</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="publish.html">发布动态</a></li>
+            <li><a href="profile.html">个人主页</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="publish-container">
+    <h2>发布新动态</h2>
+    <form id="publish-form" class="publish-form">
+        <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username" placeholder="请输入你的昵称" required>
+            <span class="error-tip" id="username-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="content">分享内容</label>
+            <textarea id="content" name="content" rows="6" placeholder="写下你想分享的内容..." required></textarea>
+            <span class="error-tip" id="content-error"></span>
+        </div>
+        <button type="submit" class="submit-btn">发布动态</button>
+    </form>
+</main>
+
+<script src="js/publish.js"></script>
+</body>
+</html>

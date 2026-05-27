@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社交分享平台 - 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 导航栏复用上面的代码 -->
+<header class="site-header">
+    <nav class="nav-container">
+        <a href="index.html" class="logo">社交分享平台</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="publish.html">发布动态</a></li>
+            <li><a href="profile.html">个人主页</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="feed-container">
+    <h2>最新动态</h2>
+    <div id="feed-list" class="feed-grid">
+        <!-- 动态内容由JS渲染，这里先放静态示例 -->
+        <article class="post-card">
+            <div class="post-header">
+                <span class="username">小明</span>
+                <time class="post-time">2026-05-27 10:30</time>
+            </div>
+            <p class="post-content">今天天气真好，分享一下好心情！</p>
+        </article>
+    </div>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
